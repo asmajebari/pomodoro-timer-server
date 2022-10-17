@@ -1,0 +1,30 @@
+{
+  "name": "tasks-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.1",
+    "helmet": "^6.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "mongoose": "^6.6.4",
+    "passport": "^0.6.0",
+    "passport-google-oauth2": "^0.2.0",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "jest": "^29.2.0",
+    "nodemon": "^2.0.20"
+  }
+}
