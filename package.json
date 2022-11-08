@@ -6,7 +6,11 @@
   "scripts": {
     "watch": "nodemon src/index.js",
     "start": "node src/index.js",
-    "test": "jest"
+    "test": "env-cmd -f ./test.env jest --watch --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testTimeout": 2000000
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +18,7 @@
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
+    "env-cmd": "^10.1.0",
     "express": "^4.18.1",
     "helmet": "^6.0.0",
     "jsonwebtoken": "^8.5.1",
@@ -25,6 +30,7 @@
   },
   "devDependencies": {
     "jest": "^29.2.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.1"
   }
 }

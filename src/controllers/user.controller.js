@@ -11,7 +11,7 @@ async function httpAddUser(req, res) {
             message: 'This email already exists'
         });
     }
-}
+} 
 
 async function httpLogin (req, res) {
     try {
